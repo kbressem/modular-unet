@@ -11,7 +11,6 @@ from fastcore.dispatch import retain_type
 
 
 # Cell
-
 class Hook():
     "Create a hook on `m` with `hook_func`."
     def __init__(self, m, hook_func, is_forward=True, detach=True, cpu=False, gather=False):
