@@ -2,27 +2,29 @@
 
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
-index = {"create_body": "00_utils.ipynb",
-         "in_channels": "00_utils.ipynb",
-         "first": "00_utils.ipynb",
-         "dummy_eval": "00_utils.ipynb",
-         "model_sizes": "00_utils.ipynb",
-         "Hook": "00_utils.ipynb",
-         "hook_output": "00_utils.ipynb",
-         "Hooks": "00_utils.ipynb",
-         "hook_outputs": "00_utils.ipynb",
-         "maybe_gather": "00_utils.ipynb",
-         "to_detach": "00_utils.ipynb",
-         "apply": "00_utils.ipynb",
-         "ConvLayer": "01_unet.ipynb",
-         "SpatialAttention": "01_unet.ipynb",
-         "UnetBlock3D": "01_unet.ipynb",
-         "DeepSupervision": "01_unet.ipynb",
-         "SqueezeExcitation": "01_unet.ipynb",
-         "DynamicUnet3D": "01_unet.ipynb"}
+index = {"Hook": "fastai-hooks.ipynb",
+         "hook_output": "fastai-hooks.ipynb",
+         "Hooks": "fastai-hooks.ipynb",
+         "hook_outputs": "fastai-hooks.ipynb",
+         "maybe_gather": "fastai-hooks.ipynb",
+         "to_detach": "fastai-hooks.ipynb",
+         "apply": "fastai-hooks.ipynb",
+         "ConvLayer": "unet.ipynb",
+         "SpatialAttention": "unet.ipynb",
+         "UnetBlock3D": "unet.ipynb",
+         "DeepSupervision": "unet.ipynb",
+         "SqueezeExcitation": "unet.ipynb",
+         "DynamicUnet3D": "unet.ipynb",
+         "uresnet_18": "unet.ipynb",
+         "create_body": "utils.ipynb",
+         "in_channels": "utils.ipynb",
+         "first": "utils.ipynb",
+         "dummy_eval": "utils.ipynb",
+         "model_sizes": "utils.ipynb"}
 
-modules = ["utils.py",
-           "unet.py"]
+modules = ["fastai_hooks.py",
+           "unet.py",
+           "utils.py"]
 
 doc_url = "https://kbressem.github.io/attention_unet/"
 
