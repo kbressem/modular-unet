@@ -9,7 +9,6 @@ import torch
 from torch import nn, Tensor
 from fastcore.dispatch import retain_type
 
-
 # Cell
 class Hook():
     "Create a hook on `m` with `hook_func`."

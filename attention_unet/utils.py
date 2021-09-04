@@ -60,19 +60,7 @@ def _has_pool_type(module):
 
 # Cell
 def create_body(arch, in_channels, cut=None, pretrained=True):
-    """ Cut off the body of a typically pretrained `arch` as determined by `cut`
-        Identical to: https://github.com/fastai/fastai/blob/ecb67b8a3d322efeec1e3c37faa10025e5d22c49/fastai/vision/learner.py#L63
-
-        Args:
-            arch (callable): Function to construct the model
-            n_in (int): Number of input channels
-            cut (None, int, callable): If None, the position to cut of the body is determined automatically.
-                                       If int, the model is cut at the specified position.
-                                       If callabe, this function is used to cut the model
-
-        Returns:
-            The body of the model
-    """
+    " Cut off the body of a typically pretrained `arch` as determined by `cut` "
     model = arch(pretrained=pretrained)
     _update_first_layer(model, in_channels, pretrained)
     #cut = ifnone(cut, cnn_config(arch)['cut'])

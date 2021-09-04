@@ -237,16 +237,7 @@ Nearly identical to: <a href="https://github.com/fastai/fastai/blob/ecb67b8a3d32
 <div class="output_markdown rendered_html output_subarea ">
 <h4 id="create_body" class="doc_header"><code>create_body</code><a href="https://github.com/kbressem/attention_unet/tree/main/attention_unet/utils.py#L62" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>create_body</code>(<strong><code>arch</code></strong>, <strong><code>in_channels</code></strong>, <strong><code>cut</code></strong>=<em><code>None</code></em>, <strong><code>pretrained</code></strong>=<em><code>True</code></em>)</p>
 </blockquote>
-<p>Cut off the body of a typically pretrained <code>arch</code> as determined by <code>cut</code>
-Identical to: <a href="https://github.com/fastai/fastai/blob/ecb67b8a3d322efeec1e3c37faa10025e5d22c49/fastai/vision/learner.py#L63">https://github.com/fastai/fastai/blob/ecb67b8a3d322efeec1e3c37faa10025e5d22c49/fastai/vision/learner.py#L63</a></p>
-<p>Args:
-    arch (callable): Function to construct the model
-    n_in (int): Number of input channels
-    cut (None, int, callable): If None, the position to cut of the body is determined automatically.
-                               If int, the model is cut at the specified position.
-                               If callabe, this function is used to cut the model</p>
-<p>Returns:
-    The body of the model</p>
+<p>Cut off the body of a typically pretrained <code>arch</code> as determined by <code>cut</code></p>
 
 </div>
 
@@ -269,7 +260,7 @@ Identical to: <a href="https://github.com/fastai/fastai/blob/ecb67b8a3d322efeec1
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Cut off the body of a typically pretrained <code>arch</code> as determined by <code>cut</code>.<br>
 Identical to: <a href="https://github.com/fastai/fastai/blob/ecb67b8a3d322efeec1e3c37faa10025e5d22c49/fastai/vision/learner.py#L63">https://github.com/fastai/fastai/blob/ecb67b8a3d322efeec1e3c37faa10025e5d22c49/fastai/vision/learner.py#L63</a></p>
-<p>*Args**</p>
+<p><strong>Args</strong></p>
 <table>
 <thead><tr>
 <th>name</th>
@@ -305,6 +296,8 @@ Identical to: <a href="https://github.com/fastai/fastai/blob/ecb67b8a3d322efeec1
 </tr>
 </tbody>
 </table>
+<p><strong>Returns</strong><br>
+The body of the model</p>
 
 </div>
 </div>
@@ -320,7 +313,7 @@ Identical to: <a href="https://github.com/fastai/fastai/blob/ecb67b8a3d322efeec1
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="in_channels" class="doc_header"><code>in_channels</code><a href="https://github.com/kbressem/attention_unet/tree/main/attention_unet/utils.py#L90" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>in_channels</code>(<strong><code>module</code></strong>)</p>
+<h4 id="in_channels" class="doc_header"><code>in_channels</code><a href="https://github.com/kbressem/attention_unet/tree/main/attention_unet/utils.py#L78" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>in_channels</code>(<strong><code>module</code></strong>)</p>
 </blockquote>
 <p>Get the number of input_channels in the first weight layer in <code>module</code>.</p>
 
@@ -359,7 +352,7 @@ Identical to: <a href="https://github.com/fastai/fastai/blob/ecb67b8a3d322efeec1
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="first" class="doc_header"><code>first</code><a href="https://github.com/kbressem/attention_unet/tree/main/attention_unet/utils.py#L102" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>first</code>(<strong><code>x</code></strong>, <strong><code>f</code></strong>=<em><code>None</code></em>, <strong><code>negate</code></strong>=<em><code>False</code></em>, <strong>**<code>kwargs</code></strong>)</p>
+<h4 id="first" class="doc_header"><code>first</code><a href="https://github.com/kbressem/attention_unet/tree/main/attention_unet/utils.py#L90" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>first</code>(<strong><code>x</code></strong>, <strong><code>f</code></strong>=<em><code>None</code></em>, <strong><code>negate</code></strong>=<em><code>False</code></em>, <strong>**<code>kwargs</code></strong>)</p>
 </blockquote>
 <p>First element of <code>x</code>, optionally filtered by <code>f</code>, or None if missing</p>
 
@@ -391,7 +384,7 @@ Identical to: <a href="https://github.com/fastai/fastai/blob/ecb67b8a3d322efeec1
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="dummy_eval" class="doc_header"><code>dummy_eval</code><a href="https://github.com/kbressem/attention_unet/tree/main/attention_unet/utils.py#L109" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>dummy_eval</code>(<strong><code>m</code></strong>, <strong><code>size</code></strong>=<em><code>(8, 64, 64)</code></em>)</p>
+<h4 id="dummy_eval" class="doc_header"><code>dummy_eval</code><a href="https://github.com/kbressem/attention_unet/tree/main/attention_unet/utils.py#L97" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>dummy_eval</code>(<strong><code>m</code></strong>, <strong><code>size</code></strong>=<em><code>(8, 64, 64)</code></em>)</p>
 </blockquote>
 <p>Evaluate <code>m</code> on a dummy input of a certain <code>size</code>. Same as fastai func</p>
 
@@ -423,7 +416,7 @@ Identical to: <a href="https://github.com/fastai/fastai/blob/ecb67b8a3d322efeec1
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="model_sizes" class="doc_header"><code>model_sizes</code><a href="https://github.com/kbressem/attention_unet/tree/main/attention_unet/utils.py#L116" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>model_sizes</code>(<strong><code>m</code></strong>, <strong><code>size</code></strong>=<em><code>(8, 64, 64)</code></em>)</p>
+<h4 id="model_sizes" class="doc_header"><code>model_sizes</code><a href="https://github.com/kbressem/attention_unet/tree/main/attention_unet/utils.py#L104" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>model_sizes</code>(<strong><code>m</code></strong>, <strong><code>size</code></strong>=<em><code>(8, 64, 64)</code></em>)</p>
 </blockquote>
 <p>Pass a dummy input through the model <code>m</code> to get the various sizes of activations. same as fastai func</p>
 
