@@ -2,26 +2,17 @@
 
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
-index = {"Hook": "fastai-hooks.ipynb",
-         "hook_output": "fastai-hooks.ipynb",
-         "Hooks": "fastai-hooks.ipynb",
-         "hook_outputs": "fastai-hooks.ipynb",
-         "maybe_gather": "fastai-hooks.ipynb",
-         "to_detach": "fastai-hooks.ipynb",
-         "apply": "fastai-hooks.ipynb",
-         "ConvLayer": "unet.ipynb",
-         "SpatialAttention": "unet.ipynb",
-         "UnetBlock3D": "unet.ipynb",
-         "DeepSupervision": "unet.ipynb",
-         "SqueezeExcitation": "unet.ipynb",
-         "DynamicUnet3D": "unet.ipynb",
-         "create_body": "utils.ipynb",
-         "in_channels": "utils.ipynb",
-         "first": "utils.ipynb",
-         "dummy_eval": "utils.ipynb",
-         "model_sizes": "utils.ipynb"}
+index = {"ConvLayer": "blocks.ipynb",
+         "DropConnect": "blocks.ipynb",
+         "SqueezeExpand": "blocks.ipynb",
+         "MBConvBlock": "blocks.ipynb",
+         "UnetBlock": "blocks.ipynb",
+         "BasicResBlock": "blocks.ipynb",
+         "res_blocks": "blocks.ipynb",
+         "UNet": "unet.ipynb",
+         "all_equal": "utils.ipynb"}
 
-modules = ["fastai_hooks.py",
+modules = ["blocks.py",
            "unet.py",
            "utils.py"]
 
