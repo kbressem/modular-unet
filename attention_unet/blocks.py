@@ -60,7 +60,6 @@ class ConvLayer(nn.Sequential):
         else: return ks //2, ks // 2
 
 # Cell
-
 class DropConnect(nn.Module):
     " Drops connections with probability p "
     def __init__(self,

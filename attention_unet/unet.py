@@ -15,11 +15,11 @@ from .blocks import res_blocks, UnetBlock, ConvLayer, SqueezeExpand
 
 # Cell
 class UNet(nn.Module):
-
+    " Simple 3D UNet "
     channels = 32, 64, 128, 256, 512
     stride = 2, 2, 2, 2, 2
     blocks = 1, 2, 2, 2, 2
-    n_layers = 3
+    n_layers = 5
 
     def __init__(self, in_c, n_classes, act=nn.ReLU, norm=nn.BatchNorm3d):
         super(UNet, self).__init__()

@@ -10,13 +10,13 @@ entries:
       title: Overview
       url: /
     - output: web,pdf
-      title: Fastai Hooks
-      url: fastai-hooks.html
+      title: Blocks
+      url: blocks.html
     - output: web,pdf
-      title: U-Net
+      title: Title
       url: unet.html
     - output: web,pdf
-      title: Utility functions
+      title: Utils
       url: utils.html
     output: web
     title: attention_unet

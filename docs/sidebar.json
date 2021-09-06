@@ -1,8 +1,8 @@
 {
   "attention_unet": {
     "Overview": "/",
-    "Fastai Hooks": "fastai-hooks.html",
-    "U-Net": "unet.html",
-    "Utility functions": "utils.html"
+    "Blocks": "blocks.html",
+    "Title": "unet.html",
+    "Utils": "utils.html"
   }
 }
