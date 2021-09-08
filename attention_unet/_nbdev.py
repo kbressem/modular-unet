@@ -6,14 +6,18 @@ index = {"ConvLayer": "blocks.ipynb",
          "DropConnect": "blocks.ipynb",
          "SqueezeExpand": "blocks.ipynb",
          "MBConvBlock": "blocks.ipynb",
+         "SpatialAttention": "blocks.ipynb",
          "UnetBlock": "blocks.ipynb",
          "BasicResBlock": "blocks.ipynb",
-         "res_blocks": "blocks.ipynb",
-         "UNet": "unet.ipynb",
-         "all_equal": "utils.ipynb"}
+         "UNet": "modular_unet.ipynb",
+         "ModularUNet": "modular_unet.ipynb",
+         "UResNet18": "modular_unet.ipynb",
+         "all_equal": "utils.ipynb",
+         "first_layer": "utils.ipynb",
+         "hasattrs": "utils.ipynb"}
 
 modules = ["blocks.py",
-           "unet.py",
+           "modular_unet.py",
            "utils.py"]
 
 doc_url = "https://kbressem.github.io/attention_unet/"
