@@ -9,14 +9,20 @@ index = {"ConvLayer": "blocks.ipynb",
          "SpatialAttention": "blocks.ipynb",
          "UnetBlock": "blocks.ipynb",
          "BasicResBlock": "blocks.ipynb",
-         "UNet": "modular_unet.ipynb",
+         "res_blocks": "blocks.ipynb",
+         "UResNet": "models.ipynb",
+         "UResNet18": "models.ipynb",
+         "UResNet34": "models.ipynb",
+         "UResNet18WithAttention": "models.ipynb",
+         "UResNet18WithAttention.decoder_layer": "models.ipynb",
          "ModularUNet": "modular_unet.ipynb",
-         "UResNet18": "modular_unet.ipynb",
          "all_equal": "utils.ipynb",
          "first_layer": "utils.ipynb",
-         "hasattrs": "utils.ipynb"}
+         "hasattrs": "utils.ipynb",
+         "test_forward": "utils.ipynb"}
 
 modules = ["blocks.py",
+           "models.py",
            "modular_unet.py",
            "utils.py"]
 
