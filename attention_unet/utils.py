@@ -34,10 +34,10 @@ def hasattrs(x, attrs, do_raise=False):
     return all_present
 
 # Cell
-def test_forward(model, check_size=True):
+def test_forward(model, inp_sz = (10, 25, 25), check_size=True):
     try: in_c = first_layer(model).in_channels
-    except: in_c = 3
-    x = torch.randn(2, in_c, 10, 25, 25)
+    except: in_c = 3 # make an educated guess :)
+    x = torch.randn(2, in_c, *inp_sz)
     out = model(x)
     if check_size:
         assert out.shape[2:] == x.shape[2:], 'Size of input and output are not equal.'
