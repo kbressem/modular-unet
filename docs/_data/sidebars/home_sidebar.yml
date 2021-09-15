@@ -13,8 +13,11 @@ entries:
       title: Blocks
       url: blocks.html
     - output: web,pdf
+      title: Models
+      url: models.html
+    - output: web,pdf
       title: Title
-      url: unet.html
+      url: modular_unet.html
     - output: web,pdf
       title: Utils
       url: utils.html

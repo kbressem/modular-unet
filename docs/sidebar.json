@@ -2,7 +2,8 @@
   "attention_unet": {
     "Overview": "/",
     "Blocks": "blocks.html",
-    "Title": "unet.html",
+    "Models": "models.html",
+    "Title": "modular_unet.html",
     "Utils": "utils.html"
   }
 }
