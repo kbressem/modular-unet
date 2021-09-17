@@ -15,8 +15,8 @@ from fastcore.basics import store_attr
 # Cell
 import sys
 sys.path.append('..')
-from .blocks import UnetBlock, ConvLayer, SqueezeExpand, BasicResBlock
-from .utils import hasattrs
+from attention_unet.blocks import UnetBlock, ConvLayer, SqueezeExpand, BasicResBlock
+from attention_unet.utils import hasattrs
 
 # Cell
 class ModularUNet(nn.Module):

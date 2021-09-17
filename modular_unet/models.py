@@ -14,9 +14,9 @@ from fastcore.dispatch import patch
 # Cell
 import sys
 sys.path.append('..')
-from .modular_unet import ModularUNet
-from .blocks import BasicResBlock, UnetBlock, ConvLayer, DoubleConv, SqueezeExpand, DeepSupervision
-from .utils import test_forward
+from attention_unet.modular_unet import ModularUNet
+from attention_unet.blocks import BasicResBlock, UnetBlock, ConvLayer, DoubleConv, SqueezeExpand, DeepSupervision
+from attention_unet.utils import test_forward
 
 # Cell
 class UResNet(ModularUNet):

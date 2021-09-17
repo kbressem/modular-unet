@@ -36,8 +36,8 @@ modules = ["blocks.py",
            "modular_unet.py",
            "utils.py"]
 
-doc_url = "https://kbressem.github.io/attention_unet/"
+doc_url = "https://kbressem.github.io/modular_unet/"
 
-git_url = "https://github.com/kbressem/attention_unet/tree/main/"
+git_url = "https://github.com/kbressem/modular_unet/tree/main/"
 
 def custom_doc_links(name): return None

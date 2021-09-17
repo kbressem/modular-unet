@@ -16,7 +16,7 @@ from fastcore.basics import store_attr
 # Cell
 import sys
 sys.path.append('..')
-from .utils import all_equal, test_forward
+from attention_unet.utils import all_equal, test_forward
 
 # Cell
 class ConvLayer(nn.Sequential):
