@@ -16,7 +16,7 @@ entries:
       title: Models
       url: models.html
     - output: web,pdf
-      title: Title
+      title: Modular UNet
       url: modular_unet.html
     - output: web,pdf
       title: Utils

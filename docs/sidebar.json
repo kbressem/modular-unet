@@ -3,7 +3,7 @@
     "Overview": "/",
     "Blocks": "blocks.html",
     "Models": "models.html",
-    "Title": "modular_unet.html",
+    "Modular UNet": "modular_unet.html",
     "Utils": "utils.html"
   }
 }
