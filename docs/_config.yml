@@ -1,9 +1,9 @@
-repository: kbressem/attention_unet
+repository: kbressem/modular_unet
 output: web
-topnav_title: attention_unet
-site_title: attention_unet
+topnav_title: modular_unet
+site_title: modular_unet
 company_name: Keno Bressem
-description: Dynamic U-Net with spatial and channel wise attention
+description: A modular U-Net for fast experimentation with different architectures 
 # Set to false to disable KaTeX math
 use_math: true
 # Add Google analytics id if you have one and want to use it here
@@ -63,4 +63,4 @@ plugins:
     - jekyll-remote-theme
     
 remote_theme: fastai/nbdev-jekyll-theme
-baseurl: /modular_unet/
+baseurl: /modular-unet/
