@@ -6,8 +6,8 @@ title: Models
 keywords: fastai
 sidebar: home_sidebar
 
-
-
+summary: "Prebuild ModularUNet subclasses"
+description: "Prebuild ModularUNet subclasses"
 nb_path: "nbs/models.ipynb"
 ---
 <!--
@@ -53,7 +53,7 @@ nb_path: "nbs/models.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h2 id="UResNet" class="doc_header"><code>class</code> <code>UResNet</code><a href="https://github.com/kbressem/attention_unet/tree/main/attention_unet/models.py#L22" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>UResNet</code>(<strong><code>in_c</code></strong>:<code>int</code>, <strong><code>n_classes</code></strong>:<code>int</code>, <strong><code>norm</code></strong>=<em><code>BatchNorm3d</code></em>, <strong><code>act</code></strong>=<em><code>ReLU</code></em>, <strong>**<code>kwargs</code></strong>) :: <a href="/attention_unet/modular_unet.html#ModularUNet"><code>ModularUNet</code></a></p>
+<h2 id="UResNet" class="doc_header"><code>class</code> <code>UResNet</code><a href="https://github.com/kbressem/modular_unet/tree/main/modular_unet/models.py#L24" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>UResNet</code>(<strong><code>in_c</code></strong>:<code>int</code>, <strong><code>n_classes</code></strong>:<code>int</code>, <strong><code>norm</code></strong>=<em><code>BatchNorm3d</code></em>, <strong><code>act</code></strong>=<em><code>ReLU</code></em>, <strong>**<code>kwargs</code></strong>) :: <a href="/modular_unet/modular_unet.html#ModularUNet"><code>ModularUNet</code></a></p>
 </blockquote>
 <p>Modular 3D UNet</p>
 
@@ -91,7 +91,7 @@ nb_path: "nbs/models.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h2 id="UResNet18" class="doc_header"><code>class</code> <code>UResNet18</code><a href="https://github.com/kbressem/attention_unet/tree/main/attention_unet/models.py#L31" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>UResNet18</code>(<strong><code>in_c</code></strong>:<code>int</code>, <strong><code>n_classes</code></strong>:<code>int</code>, <strong><code>norm</code></strong>=<em><code>BatchNorm3d</code></em>, <strong><code>act</code></strong>=<em><code>ReLU</code></em>, <strong>**<code>kwargs</code></strong>) :: <a href="/attention_unet/models.html#UResNet"><code>UResNet</code></a></p>
+<h2 id="UResNet18" class="doc_header"><code>class</code> <code>UResNet18</code><a href="https://github.com/kbressem/modular_unet/tree/main/modular_unet/models.py#L33" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>UResNet18</code>(<strong><code>in_c</code></strong>:<code>int</code>, <strong><code>n_classes</code></strong>:<code>int</code>, <strong><code>norm</code></strong>=<em><code>BatchNorm3d</code></em>, <strong><code>act</code></strong>=<em><code>ReLU</code></em>, <strong>**<code>kwargs</code></strong>) :: <a href="/modular_unet/models.html#UResNet"><code>UResNet</code></a></p>
 </blockquote>
 <p>UNet with ResNet18-like Backbone</p>
 
@@ -140,7 +140,7 @@ nb_path: "nbs/models.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h2 id="UResNet18WithAttention" class="doc_header"><code>class</code> <code>UResNet18WithAttention</code><a href="https://github.com/kbressem/attention_unet/tree/main/attention_unet/models.py#L41" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>UResNet18WithAttention</code>(<strong><code>in_c</code></strong>:<code>int</code>, <strong><code>n_classes</code></strong>:<code>int</code>, <strong><code>norm</code></strong>=<em><code>BatchNorm3d</code></em>, <strong><code>act</code></strong>=<em><code>ReLU</code></em>, <strong>**<code>kwargs</code></strong>) :: <a href="/attention_unet/models.html#UResNet18"><code>UResNet18</code></a></p>
+<h2 id="UResNet18WithAttention" class="doc_header"><code>class</code> <code>UResNet18WithAttention</code><a href="https://github.com/kbressem/modular_unet/tree/main/modular_unet/models.py#L43" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>UResNet18WithAttention</code>(<strong><code>in_c</code></strong>:<code>int</code>, <strong><code>n_classes</code></strong>:<code>int</code>, <strong><code>norm</code></strong>=<em><code>BatchNorm3d</code></em>, <strong><code>act</code></strong>=<em><code>ReLU</code></em>, <strong>**<code>kwargs</code></strong>) :: <a href="/modular_unet/models.html#UResNet18"><code>UResNet18</code></a></p>
 </blockquote>
 <p>UNet with ResNet18-like Backbone and spatial Attention in Upsampling blocks</p>
 
@@ -190,7 +190,7 @@ nb_path: "nbs/models.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="UResNet18WithAttention.decoder_layer" class="doc_header"><code>UResNet18WithAttention.decoder_layer</code><a href="https://github.com/kbressem/attention_unet/tree/main/attention_unet/models.py#L46" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>UResNet18WithAttention.decoder_layer</code>(<strong>**<code>kwargs</code></strong>)</p>
+<h4 id="UResNet18WithAttention.decoder_layer" class="doc_header"><code>UResNet18WithAttention.decoder_layer</code><a href="https://github.com/kbressem/modular_unet/tree/main/modular_unet/models.py#L48" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>UResNet18WithAttention.decoder_layer</code>(<strong>**<code>kwargs</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -263,7 +263,7 @@ nb_path: "nbs/models.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h2 id="UResNet18DeepSupervision" class="doc_header"><code>class</code> <code>UResNet18DeepSupervision</code><a href="https://github.com/kbressem/attention_unet/tree/main/attention_unet/models.py#L51" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>UResNet18DeepSupervision</code>(<strong><code>in_c</code></strong>:<code>int</code>, <strong><code>n_classes</code></strong>:<code>int</code>, <strong><code>norm</code></strong>=<em><code>BatchNorm3d</code></em>, <strong><code>act</code></strong>=<em><code>ReLU</code></em>, <strong>**<code>kwargs</code></strong>) :: <a href="/attention_unet/models.html#UResNet18"><code>UResNet18</code></a></p>
+<h2 id="UResNet18DeepSupervision" class="doc_header"><code>class</code> <code>UResNet18DeepSupervision</code><a href="https://github.com/kbressem/modular_unet/tree/main/modular_unet/models.py#L53" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>UResNet18DeepSupervision</code>(<strong><code>in_c</code></strong>:<code>int</code>, <strong><code>n_classes</code></strong>:<code>int</code>, <strong><code>norm</code></strong>=<em><code>BatchNorm3d</code></em>, <strong><code>act</code></strong>=<em><code>ReLU</code></em>, <strong>**<code>kwargs</code></strong>) :: <a href="/modular_unet/models.html#UResNet18"><code>UResNet18</code></a></p>
 </blockquote>
 <p>UNet with ResNet18-like Backbone and dee supervision after Upsampling blocks</p>
 
@@ -312,7 +312,7 @@ nb_path: "nbs/models.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h2 id="UResNet18WithAttentionAndDeepSupervision" class="doc_header"><code>class</code> <code>UResNet18WithAttentionAndDeepSupervision</code><a href="https://github.com/kbressem/attention_unet/tree/main/attention_unet/models.py#L57" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>UResNet18WithAttentionAndDeepSupervision</code>(<strong><code>in_c</code></strong>:<code>int</code>, <strong><code>n_classes</code></strong>:<code>int</code>, <strong><code>norm</code></strong>=<em><code>BatchNorm3d</code></em>, <strong><code>act</code></strong>=<em><code>ReLU</code></em>, <strong>**<code>kwargs</code></strong>) :: <a href="/attention_unet/models.html#UResNet18"><code>UResNet18</code></a></p>
+<h2 id="UResNet18WithAttentionAndDeepSupervision" class="doc_header"><code>class</code> <code>UResNet18WithAttentionAndDeepSupervision</code><a href="https://github.com/kbressem/modular_unet/tree/main/modular_unet/models.py#L59" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>UResNet18WithAttentionAndDeepSupervision</code>(<strong><code>in_c</code></strong>:<code>int</code>, <strong><code>n_classes</code></strong>:<code>int</code>, <strong><code>norm</code></strong>=<em><code>BatchNorm3d</code></em>, <strong><code>act</code></strong>=<em><code>ReLU</code></em>, <strong>**<code>kwargs</code></strong>) :: <a href="/modular_unet/models.html#UResNet18"><code>UResNet18</code></a></p>
 </blockquote>
 <p>UNet with ResNet18-like Backbone and spatial attention in Upsampling blocks and deep supervision after encoder</p>
 
@@ -361,7 +361,7 @@ nb_path: "nbs/models.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h2 id="UResNet18WithSEAndAttentionAndDeepSupervision" class="doc_header"><code>class</code> <code>UResNet18WithSEAndAttentionAndDeepSupervision</code><a href="https://github.com/kbressem/attention_unet/tree/main/attention_unet/models.py#L65" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>UResNet18WithSEAndAttentionAndDeepSupervision</code>(<strong><code>in_c</code></strong>:<code>int</code>, <strong><code>n_classes</code></strong>:<code>int</code>, <strong><code>norm</code></strong>=<em><code>BatchNorm3d</code></em>, <strong><code>act</code></strong>=<em><code>ReLU</code></em>, <strong>**<code>kwargs</code></strong>) :: <a href="/attention_unet/models.html#UResNet18"><code>UResNet18</code></a></p>
+<h2 id="UResNet18WithSEAndAttentionAndDeepSupervision" class="doc_header"><code>class</code> <code>UResNet18WithSEAndAttentionAndDeepSupervision</code><a href="https://github.com/kbressem/modular_unet/tree/main/modular_unet/models.py#L67" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>UResNet18WithSEAndAttentionAndDeepSupervision</code>(<strong><code>in_c</code></strong>:<code>int</code>, <strong><code>n_classes</code></strong>:<code>int</code>, <strong><code>norm</code></strong>=<em><code>BatchNorm3d</code></em>, <strong><code>act</code></strong>=<em><code>ReLU</code></em>, <strong>**<code>kwargs</code></strong>) :: <a href="/modular_unet/models.html#UResNet18"><code>UResNet18</code></a></p>
 </blockquote>
 <p>UNet with ResNet18-like Backbone and spatial attention in Upsampling blocks and deep supervision after encoder</p>
 
@@ -416,7 +416,7 @@ nb_path: "nbs/models.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h2 id="UResNet34" class="doc_header"><code>class</code> <code>UResNet34</code><a href="https://github.com/kbressem/attention_unet/tree/main/attention_unet/models.py#L78" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>UResNet34</code>(<strong><code>in_c</code></strong>:<code>int</code>, <strong><code>n_classes</code></strong>:<code>int</code>, <strong><code>norm</code></strong>=<em><code>BatchNorm3d</code></em>, <strong><code>act</code></strong>=<em><code>ReLU</code></em>, <strong>**<code>kwargs</code></strong>) :: <a href="/attention_unet/models.html#UResNet"><code>UResNet</code></a></p>
+<h2 id="UResNet34" class="doc_header"><code>class</code> <code>UResNet34</code><a href="https://github.com/kbressem/modular_unet/tree/main/modular_unet/models.py#L80" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>UResNet34</code>(<strong><code>in_c</code></strong>:<code>int</code>, <strong><code>n_classes</code></strong>:<code>int</code>, <strong><code>norm</code></strong>=<em><code>BatchNorm3d</code></em>, <strong><code>act</code></strong>=<em><code>ReLU</code></em>, <strong>**<code>kwargs</code></strong>) :: <a href="/modular_unet/models.html#UResNet"><code>UResNet</code></a></p>
 </blockquote>
 <p>UNet with ResNet34-like Backbone</p>
 
@@ -465,7 +465,7 @@ nb_path: "nbs/models.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h2 id="UResNet34WithAttention" class="doc_header"><code>class</code> <code>UResNet34WithAttention</code><a href="https://github.com/kbressem/attention_unet/tree/main/attention_unet/models.py#L88" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>UResNet34WithAttention</code>(<strong><code>in_c</code></strong>:<code>int</code>, <strong><code>n_classes</code></strong>:<code>int</code>, <strong><code>norm</code></strong>=<em><code>BatchNorm3d</code></em>, <strong><code>act</code></strong>=<em><code>ReLU</code></em>, <strong>**<code>kwargs</code></strong>) :: <a href="/attention_unet/models.html#UResNet34"><code>UResNet34</code></a></p>
+<h2 id="UResNet34WithAttention" class="doc_header"><code>class</code> <code>UResNet34WithAttention</code><a href="https://github.com/kbressem/modular_unet/tree/main/modular_unet/models.py#L90" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>UResNet34WithAttention</code>(<strong><code>in_c</code></strong>:<code>int</code>, <strong><code>n_classes</code></strong>:<code>int</code>, <strong><code>norm</code></strong>=<em><code>BatchNorm3d</code></em>, <strong><code>act</code></strong>=<em><code>ReLU</code></em>, <strong>**<code>kwargs</code></strong>) :: <a href="/modular_unet/models.html#UResNet34"><code>UResNet34</code></a></p>
 </blockquote>
 <p>UNet with ResNet34-like Backbone and spatial Attention in Upsampling blocks</p>
 
@@ -514,7 +514,7 @@ nb_path: "nbs/models.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h2 id="UResNet34DeepSupervision" class="doc_header"><code>class</code> <code>UResNet34DeepSupervision</code><a href="https://github.com/kbressem/attention_unet/tree/main/attention_unet/models.py#L94" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>UResNet34DeepSupervision</code>(<strong><code>in_c</code></strong>:<code>int</code>, <strong><code>n_classes</code></strong>:<code>int</code>, <strong><code>norm</code></strong>=<em><code>BatchNorm3d</code></em>, <strong><code>act</code></strong>=<em><code>ReLU</code></em>, <strong>**<code>kwargs</code></strong>) :: <a href="/attention_unet/models.html#UResNet34"><code>UResNet34</code></a></p>
+<h2 id="UResNet34DeepSupervision" class="doc_header"><code>class</code> <code>UResNet34DeepSupervision</code><a href="https://github.com/kbressem/modular_unet/tree/main/modular_unet/models.py#L96" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>UResNet34DeepSupervision</code>(<strong><code>in_c</code></strong>:<code>int</code>, <strong><code>n_classes</code></strong>:<code>int</code>, <strong><code>norm</code></strong>=<em><code>BatchNorm3d</code></em>, <strong><code>act</code></strong>=<em><code>ReLU</code></em>, <strong>**<code>kwargs</code></strong>) :: <a href="/modular_unet/models.html#UResNet34"><code>UResNet34</code></a></p>
 </blockquote>
 <p>UNet with ResNet34-like Backbone and dee supervision after Upsampling blocks</p>
 
@@ -563,7 +563,7 @@ nb_path: "nbs/models.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h2 id="UResNet34WithAttentionAndDeepSupervision" class="doc_header"><code>class</code> <code>UResNet34WithAttentionAndDeepSupervision</code><a href="https://github.com/kbressem/attention_unet/tree/main/attention_unet/models.py#L100" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>UResNet34WithAttentionAndDeepSupervision</code>(<strong><code>in_c</code></strong>:<code>int</code>, <strong><code>n_classes</code></strong>:<code>int</code>, <strong><code>norm</code></strong>=<em><code>BatchNorm3d</code></em>, <strong><code>act</code></strong>=<em><code>ReLU</code></em>, <strong>**<code>kwargs</code></strong>) :: <a href="/attention_unet/models.html#UResNet34"><code>UResNet34</code></a></p>
+<h2 id="UResNet34WithAttentionAndDeepSupervision" class="doc_header"><code>class</code> <code>UResNet34WithAttentionAndDeepSupervision</code><a href="https://github.com/kbressem/modular_unet/tree/main/modular_unet/models.py#L102" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>UResNet34WithAttentionAndDeepSupervision</code>(<strong><code>in_c</code></strong>:<code>int</code>, <strong><code>n_classes</code></strong>:<code>int</code>, <strong><code>norm</code></strong>=<em><code>BatchNorm3d</code></em>, <strong><code>act</code></strong>=<em><code>ReLU</code></em>, <strong>**<code>kwargs</code></strong>) :: <a href="/modular_unet/models.html#UResNet34"><code>UResNet34</code></a></p>
 </blockquote>
 <p>UNet with ResNet34-like Backbone and spatial attention in Upsampling blocks and deep supervision after encoder</p>
 
@@ -612,7 +612,7 @@ nb_path: "nbs/models.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h2 id="UResNet34WithSEAndAttentionAndDeepSupervision" class="doc_header"><code>class</code> <code>UResNet34WithSEAndAttentionAndDeepSupervision</code><a href="https://github.com/kbressem/attention_unet/tree/main/attention_unet/models.py#L108" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>UResNet34WithSEAndAttentionAndDeepSupervision</code>(<strong><code>in_c</code></strong>:<code>int</code>, <strong><code>n_classes</code></strong>:<code>int</code>, <strong><code>norm</code></strong>=<em><code>BatchNorm3d</code></em>, <strong><code>act</code></strong>=<em><code>ReLU</code></em>, <strong>**<code>kwargs</code></strong>) :: <a href="/attention_unet/models.html#UResNet34"><code>UResNet34</code></a></p>
+<h2 id="UResNet34WithSEAndAttentionAndDeepSupervision" class="doc_header"><code>class</code> <code>UResNet34WithSEAndAttentionAndDeepSupervision</code><a href="https://github.com/kbressem/modular_unet/tree/main/modular_unet/models.py#L110" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>UResNet34WithSEAndAttentionAndDeepSupervision</code>(<strong><code>in_c</code></strong>:<code>int</code>, <strong><code>n_classes</code></strong>:<code>int</code>, <strong><code>norm</code></strong>=<em><code>BatchNorm3d</code></em>, <strong><code>act</code></strong>=<em><code>ReLU</code></em>, <strong>**<code>kwargs</code></strong>) :: <a href="/modular_unet/models.html#UResNet34"><code>UResNet34</code></a></p>
 </blockquote>
 <p>UNet with ResNet34-like Backbone and spatial attention in Upsampling blocks and deep supervision after encoder</p>
 
@@ -641,6 +641,257 @@ nb_path: "nbs/models.ipynb"
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">test_forward</span><span class="p">(</span><span class="n">UResNet34WithSEAndAttentionAndDeepSupervision</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="UResNet50-like-models">UResNet50-like models<a class="anchor-link" href="#UResNet50-like-models"> </a></h3>
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h2 id="UResNet50" class="doc_header"><code>class</code> <code>UResNet50</code><a href="https://github.com/kbressem/modular_unet/tree/main/modular_unet/models.py#L123" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>UResNet50</code>(<strong><code>in_c</code></strong>:<code>int</code>, <strong><code>n_classes</code></strong>:<code>int</code>, <strong><code>norm</code></strong>=<em><code>BatchNorm3d</code></em>, <strong><code>act</code></strong>=<em><code>ReLU</code></em>, <strong>**<code>kwargs</code></strong>) :: <a href="/modular_unet/models.html#UResNet"><code>UResNet</code></a></p>
+</blockquote>
+<p>UNet with ResNet50-like Backbone</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">test_forward</span><span class="p">(</span><span class="n">UResNet50</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h2 id="UResNet50WithAttention" class="doc_header"><code>class</code> <code>UResNet50WithAttention</code><a href="https://github.com/kbressem/modular_unet/tree/main/modular_unet/models.py#L136" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>UResNet50WithAttention</code>(<strong><code>in_c</code></strong>:<code>int</code>, <strong><code>n_classes</code></strong>:<code>int</code>, <strong><code>norm</code></strong>=<em><code>BatchNorm3d</code></em>, <strong><code>act</code></strong>=<em><code>ReLU</code></em>, <strong>**<code>kwargs</code></strong>) :: <a href="/modular_unet/models.html#UResNet50"><code>UResNet50</code></a></p>
+</blockquote>
+<p>UNet with ResNet50-like Backbone and spatial Attention in Upsampling blocks</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">test_forward</span><span class="p">(</span><span class="n">UResNet50WithAttention</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h2 id="UResNet50DeepSupervision" class="doc_header"><code>class</code> <code>UResNet50DeepSupervision</code><a href="https://github.com/kbressem/modular_unet/tree/main/modular_unet/models.py#L142" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>UResNet50DeepSupervision</code>(<strong><code>in_c</code></strong>:<code>int</code>, <strong><code>n_classes</code></strong>:<code>int</code>, <strong><code>norm</code></strong>=<em><code>BatchNorm3d</code></em>, <strong><code>act</code></strong>=<em><code>ReLU</code></em>, <strong>**<code>kwargs</code></strong>) :: <a href="/modular_unet/models.html#UResNet50"><code>UResNet50</code></a></p>
+</blockquote>
+<p>UNet with ResNet50-like Backbone and dee supervision after Upsampling blocks</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">test_forward</span><span class="p">(</span><span class="n">UResNet50DeepSupervision</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h2 id="UResNet50WithAttentionAndDeepSupervision" class="doc_header"><code>class</code> <code>UResNet50WithAttentionAndDeepSupervision</code><a href="https://github.com/kbressem/modular_unet/tree/main/modular_unet/models.py#L148" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>UResNet50WithAttentionAndDeepSupervision</code>(<strong><code>in_c</code></strong>:<code>int</code>, <strong><code>n_classes</code></strong>:<code>int</code>, <strong><code>norm</code></strong>=<em><code>BatchNorm3d</code></em>, <strong><code>act</code></strong>=<em><code>ReLU</code></em>, <strong>**<code>kwargs</code></strong>) :: <a href="/modular_unet/models.html#UResNet50"><code>UResNet50</code></a></p>
+</blockquote>
+<p>UNet with ResNet50-like Backbone and spatial attention in Upsampling blocks and deep supervision after encoder</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">test_forward</span><span class="p">(</span><span class="n">UResNet50WithAttentionAndDeepSupervision</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h2 id="UResNet50WithSEAndAttentionAndDeepSupervision" class="doc_header"><code>class</code> <code>UResNet50WithSEAndAttentionAndDeepSupervision</code><a href="https://github.com/kbressem/modular_unet/tree/main/modular_unet/models.py#L156" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>UResNet50WithSEAndAttentionAndDeepSupervision</code>(<strong><code>in_c</code></strong>:<code>int</code>, <strong><code>n_classes</code></strong>:<code>int</code>, <strong><code>norm</code></strong>=<em><code>BatchNorm3d</code></em>, <strong><code>act</code></strong>=<em><code>ReLU</code></em>, <strong>**<code>kwargs</code></strong>) :: <a href="/modular_unet/models.html#UResNet50"><code>UResNet50</code></a></p>
+</blockquote>
+<p>UNet with ResNet50-like Backbone and spatial attention in Upsampling blocks and deep supervision after encoder</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">test_forward</span><span class="p">(</span><span class="n">UResNet50WithSEAndAttentionAndDeepSupervision</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
 </pre></div>
 
     </div>
