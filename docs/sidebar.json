@@ -1,5 +1,5 @@
 {
-  "modular_unet": {
+  "modular-unet": {
     "Overview": "/",
     "Blocks": "blocks.html",
     "Models": "models.html",

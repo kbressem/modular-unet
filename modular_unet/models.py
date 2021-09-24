@@ -3,7 +3,9 @@
 __all__ = ['UResNet', 'UResNet18', 'UResNet18WithAttention', 'UResNet18DeepSupervision',
            'UResNet18WithAttentionAndDeepSupervision', 'UResNet18WithSEAndAttentionAndDeepSupervision', 'UResNet34',
            'UResNet34WithAttention', 'UResNet34DeepSupervision', 'UResNet34WithAttentionAndDeepSupervision',
-           'UResNet34WithSEAndAttentionAndDeepSupervision']
+           'UResNet34WithSEAndAttentionAndDeepSupervision', 'UResNet50', 'UResNet50WithAttention',
+           'UResNet50DeepSupervision', 'UResNet50WithAttentionAndDeepSupervision',
+           'UResNet50WithSEAndAttentionAndDeepSupervision']
 
 # Cell
 # default_exp models
@@ -14,18 +16,18 @@ from fastcore.dispatch import patch
 # Cell
 import sys
 sys.path.append('..')
-from attention_unet.modular_unet import ModularUNet
-from attention_unet.blocks import BasicResBlock, UnetBlock, ConvLayer, DoubleConv, SqueezeExpand, DeepSupervision
-from attention_unet.utils import test_forward
+from .modular_unet import ModularUNet
+from .blocks import ResBlock, UnetBlock, ConvLayer, DoubleConv, SqueezeExpand, DeepSupervision
+from .utils import test_forward
 
 # Cell
 class UResNet(ModularUNet):
-    def encoder_layer(self, **kwargs): return BasicResBlock(**kwargs)
+    def encoder_layer(self, **kwargs): return ResBlock(**kwargs)
     def middle_layer(self, **kwargs): return DoubleConv(**kwargs)
     def skip_layer(self, **kwargs): return nn.Identity()
     def decoder_layer(self, **kwargs): return UnetBlock(**kwargs)
     def extra_after_decoder_layer(self, **kwargs): return nn.Identity()
-    def final_layer(self, **kwargs): return BasicResBlock(**kwargs)
+    def final_layer(self, **kwargs): return ResBlock(**kwargs)
 
 # Cell
 class UResNet18(UResNet):
@@ -66,7 +68,7 @@ class UResNet18WithSEAndAttentionAndDeepSupervision(UResNet18):
     " UNet with ResNet18-like Backbone and spatial attention in Upsampling blocks and deep supervision after encoder "
     def encoder_layer(self, in_c, out_c, **kwargs):
         return nn.Sequential(
-            BasicResBlock(in_c, out_c, **kwargs),
+            ResBlock(in_c, out_c, **kwargs),
             SqueezeExpand(out_c, se_ratio=0.2)
         )
     def decoder_layer(self, **kwargs):
@@ -109,7 +111,53 @@ class UResNet34WithSEAndAttentionAndDeepSupervision(UResNet34):
     " UNet with ResNet34-like Backbone and spatial attention in Upsampling blocks and deep supervision after encoder "
     def encoder_layer(self, in_c, out_c, **kwargs):
         return nn.Sequential(
-            BasicResBlock(in_c, out_c, **kwargs),
+            ResBlock(in_c, out_c, **kwargs),
+            SqueezeExpand(out_c, se_ratio=0.2)
+        )
+    def decoder_layer(self, **kwargs):
+        return UnetBlock(spatial_attention=True, **kwargs)
+    def extra_after_decoder_layer(self, **kwargs):
+        return DeepSupervision(**kwargs)
+
+# Cell
+class UResNet50(UResNet):
+    " UNet with ResNet50-like Backbone "
+    channels = 128, 256, 512, 1024, 2048
+    kernel_size = 3, 3, 3, 3, 3
+    stride = 2, 2, 2, 2, 2
+    padding = 'auto', 'auto', 'auto', 'auto', 'auto'
+    n_layers = 1, 3, 4, 6, 3
+    n_blocks = 5
+
+    def encoder_layer(self, **kwargs): return ResBlock(bottleneck = True, **kwargs)
+
+
+# Cell
+class UResNet50WithAttention(UResNet50):
+    " UNet with ResNet50-like Backbone and spatial Attention in Upsampling blocks"
+    def decoder_layer(self, **kwargs):
+        return UnetBlock(spatial_attention=True, **kwargs)
+
+# Cell
+class UResNet50DeepSupervision(UResNet50):
+    " UNet with ResNet50-like Backbone and dee supervision after Upsampling blocks "
+    def extra_after_decoder_layer(self, **kwargs):
+        return DeepSupervision(**kwargs)
+
+# Cell
+class UResNet50WithAttentionAndDeepSupervision(UResNet50):
+    " UNet with ResNet50-like Backbone and spatial attention in Upsampling blocks and deep supervision after encoder "
+    def decoder_layer(self, **kwargs):
+        return UnetBlock(spatial_attention=True, **kwargs)
+    def extra_after_decoder_layer(self, **kwargs):
+        return DeepSupervision(**kwargs)
+
+# Cell
+class UResNet50WithSEAndAttentionAndDeepSupervision(UResNet50):
+    " UNet with ResNet50-like Backbone and spatial attention in Upsampling blocks and deep supervision after encoder "
+    def encoder_layer(self, in_c, out_c, **kwargs):
+        return nn.Sequential(
+            ResBlock(in_c, out_c, bottleneck=True, **kwargs),
             SqueezeExpand(out_c, se_ratio=0.2)
         )
     def decoder_layer(self, **kwargs):
